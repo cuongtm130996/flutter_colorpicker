@@ -656,7 +656,7 @@ class _SlidePickerState extends State<SlidePicker> {
                   child: Text(
                     trackType.toString().split('.').last[0].toUpperCase(),
                     style: widget.sliderTextStyle ??
-                        Theme.of(context).textTheme.bodyText1,
+                        Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
               Expanded(child: colorPickerSlider(trackType)),
@@ -666,7 +666,7 @@ class _SlidePickerState extends State<SlidePicker> {
                   child: Text(
                     getColorParams(trackTypes.indexOf(trackType)),
                     style: widget.sliderTextStyle ??
-                        Theme.of(context).textTheme.bodyText2,
+                        Theme.of(context).textTheme.bodyMedium,
                     textAlign: TextAlign.right,
                   ),
                 ),
